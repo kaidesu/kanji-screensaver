@@ -32,6 +32,7 @@ export default function Home() {
     const tick = () => {
         if (seconds === 0) {
             setKanji(getRandomKanji())
+            setColor(getRandomColor())
             setSeconds(10)
         } else {
             setSeconds(seconds - 1)
